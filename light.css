@@ -9,6 +9,29 @@
   color: #fff;
 }
 
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.switch input {
+    /* First, we make it as wide as the container */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Then, we put it on top of everything else */
+    z-index: 100;
+    /* Last, we make it invisible */
+    opacity: 0;
+    /* This one is just for ergonomy */
+    cursor: pointer;
+}
+
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
@@ -170,11 +193,6 @@ body {
 .form-signin .checkbox {
   margin-bottom: 10px;
 }
-.form-signin .checkbox {
-  font-weight: normal;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
 .form-signin .form-control {
   position: relative;
   height: auto;
@@ -197,4 +215,199 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-.bootstrap-switch{display:inline-block;cursor:pointer;border-radius:4px;border:1px solid;border-color:#ccc;position:relative;text-align:left;overflow:hidden;line-height:8px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;min-width:100px;-webkit-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s}.bootstrap-switch.bootstrap-switch-mini{min-width:71px}.bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-handle-on,.bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-handle-off,.bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-label{padding-bottom:4px;padding-top:4px;font-size:10px;line-height:9px}.bootstrap-switch.bootstrap-switch-small{min-width:79px}.bootstrap-switch.bootstrap-switch-small .bootstrap-switch-handle-on,.bootstrap-switch.bootstrap-switch-small .bootstrap-switch-handle-off,.bootstrap-switch.bootstrap-switch-small .bootstrap-switch-label{padding-bottom:3px;padding-top:3px;font-size:12px;line-height:18px}.bootstrap-switch.bootstrap-switch-large{min-width:120px}.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-handle-on,.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-handle-off,.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-label{padding-bottom:9px;padding-top:9px;font-size:16px;line-height:normal}.bootstrap-switch.bootstrap-switch-animate .bootstrap-switch-container{-webkit-transition:margin-left .5s;transition:margin-left .5s}.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-container{margin-left:0}.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-label{border-bottom-right-radius:3px;border-top-right-radius:3px}.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-container{margin-left:-50%}.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-label{border-bottom-left-radius:3px;border-top-left-radius:3px}.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-container{margin-left:-25%}.bootstrap-switch.bootstrap-switch-disabled,.bootstrap-switch.bootstrap-switch-readonly,.bootstrap-switch.bootstrap-switch-indeterminate{opacity:.5;filter:alpha(opacity=50);cursor:default!important}.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-handle-on,.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-handle-on,.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-handle-on,.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-handle-off,.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-handle-off,.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-handle-off,.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-label,.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-label,.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-label{cursor:default!important}.bootstrap-switch.bootstrap-switch-focused{border-color:#66afe9;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)}.bootstrap-switch .bootstrap-switch-container{display:inline-block;width:150%;top:0;border-radius:4px;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.bootstrap-switch .bootstrap-switch-handle-on,.bootstrap-switch .bootstrap-switch-handle-off,.bootstrap-switch .bootstrap-switch-label{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;cursor:pointer;display:inline-block!important;height:100%;padding-bottom:4px;padding-top:4px;font-size:14px;line-height:20px}.bootstrap-switch .bootstrap-switch-handle-on,.bootstrap-switch .bootstrap-switch-handle-off{text-align:center;z-index:1;width:33.33333333%}.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary,.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary{color:#fff;background:#428bca}.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info,.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info{color:#fff;background:#5bc0de}.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success,.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success{color:#fff;background:#5cb85c}.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning,.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning{background:#f0ad4e;color:#fff}.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger,.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger{color:#fff;background:#d9534f}.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default,.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default{color:#000;background:#eee}.bootstrap-switch .bootstrap-switch-handle-on{border-bottom-left-radius:3px;border-top-left-radius:3px}.bootstrap-switch .bootstrap-switch-handle-off{border-bottom-right-radius:3px;border-top-right-radius:3px}.bootstrap-switch .bootstrap-switch-label{text-align:center;margin-top:-1px;margin-bottom:-1px;z-index:100;width:33.33333333%;color:#333;background:#fff}.bootstrap-switch input[type=radio],.bootstrap-switch input[type=checkbox]{position:absolute!important;top:0;left:0;opacity:0;filter:alpha(opacity=0);z-index:-1}.bootstrap-switch input[type=radio].form-control,.bootstrap-switch input[type=checkbox].form-control{height:auto}
+.switch {
+    width: 50px;
+    height: 100px;
+    position: relative;
+}
+.switch label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #cbc7bc;
+    border-radius: 5px;
+    box-shadow:
+        inset 0 1px 0 white,
+        0 0 0 1px #999,
+        0 0 5px 1px rgba(0,0,0,0.2),
+        0 2px 0 rgba(255,255,255,0.6),
+        inset 0 10px 1px #e5e5e5,
+        inset 0 11px 0 rgba(255,255,255,0.5),
+        inset 0 -45px 3px #ddd;
+}
+.switch label:after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -25px;
+  bottom: -20px;
+  right: -25px;
+  background: #ccc;
+  background: -moz-linear-gradient(#ddd, #bbb);
+  background: -ms-linear-gradient(#ddd, #bbb);
+  background: -o-linear-gradient(#ddd, #bbb);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ddd), to(#bbb));
+  background: -webkit-linear-gradient(#ddd, #bbb);
+  background: linear-gradient(#ddd, #bbb);
+  z-index: -1;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  box-shadow:
+      0 0 5px 1px rgba(0,0,0,0.15),
+      0 3px 3px rgba(0,0,0,0.3),
+      inset 0 1px 0 rgba(255,255,255,0.5);
+}
+
+.switch label:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #666;
+  top: -13px;
+  left: 20px;
+  border-radius: 50%;
+  box-shadow:
+      0 120px 0 #666,
+      0 1px 0 white,
+      0 121px 0 white;
+}
+
+.switch input:checked ~ label {
+  background: #d2cbc3;
+  box-shadow:
+      inset 0 1px 0 white,
+      0 0 0 1px #999,
+      0 0 5px 1px rgba(0,0,0,0.2),
+      inset 0 -10px 0 #aaa,
+      0 2px 0 rgba(255,255,255,0.1),
+      inset 0 45px 3px #e0e0E0,
+      0 8px 6px rgba(0,0,0,0.18);
+}
+.switch.demo3 {
+  width: 180px;
+  height: 50px;
+}
+
+.switch.demo3 label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #a5a39d;
+  border-radius: 40px;
+  box-shadow:
+      inset 0 3px 8px 1px rgba(0,0,0,0.2),
+      0 1px 0 rgba(255,255,255,0.5);
+}
+
+.switch.demo3 label:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -8px; right: -8px; bottom: -8px; left: -8px;
+  border-radius: inherit;
+  background: #ababab;
+  background: -moz-linear-gradient(#f2f2f2, #ababab);
+  background: -ms-linear-gradient(#f2f2f2, #ababab);
+  background: -o-linear-gradient(#f2f2f2, #ababab);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#ababab));
+  background: -webkit-linear-gradient(#f2f2f2, #ababab);
+  background: linear-gradient(#f2f2f2, #ababab);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3),
+        0 1px 1px rgba(0,0,0,0.25);
+}
+
+.switch.demo3 label:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -18px; right: -18px; bottom: -18px; left: -18px;
+  border-radius: inherit;
+  background: #eee;
+  background: -moz-linear-gradient(#e5e7e6, #eee);
+  background: -ms-linear-gradient(#e5e7e6, #eee);
+  background: -o-linear-gradient(#e5e7e6, #eee);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#e5e7e6), to(#eee));
+  background: -webkit-linear-gradient(#e5e7e6, #eee);
+  background: linear-gradient(#e5e7e6, #eee);
+  box-shadow:
+      0 1px 0 rgba(255,255,255,0.5);
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -ms-filter: blur(1px);
+  -o-filter: blur(1px);
+  filter: blur(1px);
+}
+
+.switch.demo3 label i {
+  display: block;
+  height: 100%;
+  width: 60%;
+  border-radius: inherit;
+  background: silver;
+  position: absolute;
+  z-index: 2;
+  right: 40%;
+  top: 0;
+  background: #b2ac9e;
+  background: -moz-linear-gradient(#f7f2f6, #b2ac9e);
+  background: -ms-linear-gradient(#f7f2f6, #b2ac9e);
+  background: -o-linear-gradient(#f7f2f6, #b2ac9e);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f2f6), to(#b2ac9e));
+  background: -webkit-linear-gradient(#f7f2f6, #b2ac9e);
+  background: linear-gradient(#f7f2f6, #b2ac9e);
+  box-shadow:
+      inset 0 1px 0 white,
+      0 0 8px rgba(0,0,0,0.3),
+      0 5px 5px rgba(0,0,0,0.2);
+}
+
+.switch.demo3 label i:after {
+  content: "";
+  position: absolute;
+  left: 15%;
+  top: 25%;
+  width: 70%;
+  height: 50%;
+  background: #d2cbc3;
+  background: -moz-linear-gradient(#cbc7bc, #d2cbc3);
+  background: -ms-linear-gradient(#cbc7bc, #d2cbc3);
+  background: -o-linear-gradient(#cbc7bc, #d2cbc3);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#cbc7bc), to(#d2cbc3));
+  background: -webkit-linear-gradient(#cbc7bc, #d2cbc3);
+  background: linear-gradient(#cbc7bc, #d2cbc3);
+  border-radius: inherit;
+}
+
+.switch.demo3 label i:before {
+  content: "off";
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  color: rgba(0,0,0,0.4);
+  text-shadow: 0 1px 0 #bcb8ae, 0 -1px 0 #97958e;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  right: -50%;
+}
+
+.switch.demo3 input:checked ~ label {
+  background: #9abb82;
+}
+
+.switch.demo3 input:checked ~ label i {
+  right: -1%;
+}
+
+.switch.demo3 input:checked ~ label i:before {
+  content: "on";
+  right: 115%;
+  color: #82a06a;
+  text-shadow: 
+    0 1px 0 #afcb9b,
+    0 -1px 0 #6b8659;
+}

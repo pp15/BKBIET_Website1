@@ -62,7 +62,7 @@
               <p class="lead">You are now on the website <br>
                 where you can control the lights of the lab in BKBIET !</p>
                 <form action="light.php" method="post" class="form-signin">
-                  <input type="text" name="prenom" class="form-control" placeholder="Pseudo" autofocus>
+                  <input type="text" name="prenom" class="form-control" placeholder="Pseudo">
                   <input type="password" name="pwd" class="form-control" placeholder="Password">
                   <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
                 </form>
