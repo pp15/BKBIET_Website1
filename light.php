@@ -79,7 +79,8 @@
 <div><p><br></p></div>
 
 <h3>Device 3</h3>
-       <input type="checkbox" name="checkbox3">
+<span id="cb3" onclick="fctdevice3()">
+       <input type="checkbox" name="checkbox3" id="checkbox3"></span>
        <button id="buttonAjax" class="btn btn-lg btn-primary" onClick="testAjax()">Test AJAX</button>           
 <div><p><br></p></div>
     <div class="mastfoot">

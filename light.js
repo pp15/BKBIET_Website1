@@ -41,5 +41,37 @@ function testAjax() {
 var xhr = getXMLHttpRequest(); // Voyez la fonction getXMLHttpRequest() définie dans la partie précédente
 xhr.open("POST", "ajax.php", true);
 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-xhr.send("variable1=e");
+xhr.send("variable1=y");
 }
+
+function fctdevice3() {
+var elementcb3 = document.getElementById('checkbox3');
+var xhr = getXMLHttpRequest(); // Voyez la fonction getXMLHttpRequest() définie dans la partie précédente
+xhr.open("POST", "ajax.php", true);
+xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+if (elementcb3.checked) {
+    xhr.send("variable1=e");
+}
+else {
+    xhr.send("variable1=f")
+}
+}
+
+function checkboxtest() {
+var elementcb3 = document.getElementById('checkbox3');
+    if (elementcb3.checked) {
+    alert ('Checked!!!!')
+}
+else {
+    alert ('Not checked !!!!!')
+}
+}
+
+/*var elementCb3 = document.getElementById('checkbox3');
+elementCb3.addEventListener('click', function() {var checkbox3 = document.getElementById('checkbox3');
+    if (checkbox3.checked) {
+    alert ('Checked!!!!')
+}
+else {
+    alert ('Not checked !!!!!')
+}}, false);*/
