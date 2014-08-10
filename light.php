@@ -61,28 +61,38 @@
        </div>
      </div>
      <h3>Device 1</h3>
-     <form action="buttonA.php" method="post">
-       <button id="buttonA" class="btn btn-lg btn-primary" type="submit"> Device 1 on</button>                
-     </form>
-     <form action="buttonB.php" method="post">
-       <button id="buttonB" class="btn btn-lg btn-primary" type="submit">Device 1 off</button>
-     </form>
-<div><p><br></p></div>
+     <span id="cb1" onclick="fctdevice1()">
+       <input type="checkbox" name="checkbox1" id="checkbox1"></span>
 
-<h3>Device 2</h3>
-     <form action="buttonC.php" method="post">
-       <button id="buttonC" class="btn btn-lg btn-primary" type="submit"> Device 2 on</button>                
-     </form>
-     <form action="buttonD.php" method="post">
-       <button id="buttonD" class="btn btn-lg btn-primary" type="submit">Device 2 off</button>
-     </form>
-<div><p><br></p></div>
+      <h3>Device 2</h3>
+     <span id="cb2" onclick="fctdevice2()">
+       <input type="checkbox" name="checkbox2" id="checkbox2"></span>
 
-<h3>Device 3</h3>
-<span id="cb3" onclick="fctdevice3()">
+      <h3>Device 3</h3>
+        <span id="cb3" onclick="fctdevice3()">
        <input type="checkbox" name="checkbox3" id="checkbox3"></span>
-       <button id="buttonAjax" class="btn btn-lg btn-primary" onClick="testAjax()">Test AJAX</button>           
-<div><p><br></p></div>
+
+      <h3>Device 4</h3>
+     <span id="cb4" onclick="fctdevice4()">
+       <input type="checkbox" name="checkbox4" id="checkbox4"></span>
+
+      <h3>Device 5</h3>
+     <span id="cb5" onclick="fctdevice5()">
+       <input type="checkbox" name="checkbox5" id="checkbox5"></span>
+
+      <h3>Device 6</h3>
+        <span id="cb6" onclick="fctdevice6()">
+       <input type="checkbox" name="checkbox6" id="checkbox6"></span>
+
+       <h3>Device 7</h3>
+     <span id="cb7" onclick="fctdevice7()">
+       <input type="checkbox" name="checkbox7" id="checkbox7"></span>
+
+      <h3>Device 8</h3>
+        <span id="cb8" onclick="fctdevice8()">
+       <input type="checkbox" name="checkbox8" id="checkbox8"></span>
+
+
     <div class="mastfoot">
      <div class="inner">
       <p>Created by Pierre-Paul Giannetti</p>
