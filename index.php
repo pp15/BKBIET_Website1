@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Index of PP website">
   <meta name="author" content="PP Giannetti">
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="light.ico">
 
   <title>PP Website</title>
 

@@ -6,16 +6,17 @@
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <meta name="description" content="">
  <meta name="author" content="">
- <link rel="icon" href="favicon.ico">
+ <link rel="icon" href="light.ico">
 
  <title>PP Website</title>
 
  <!-- Bootstrap core CSS -->
-<link href="http://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link href="bootstrap-switch-master/docs/css/bootstrap.min.css" rel="stylesheet">
-    <link href="bootstrap-switch-master/docs/css/highlight.css" rel="stylesheet">
-    <link href="bootstrap-switch-master/dist/css/bootstrap3/bootstrap-switch.css" rel="stylesheet">
-    <link href="bootstrap-switch-master/docs/css/main.css" rel="stylesheet">
+<!--<link href="http://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> -->
+<!--<link href="bootstrap-switch-master/docs/css/bootstrap.min.css" rel="stylesheet"> -->
+<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+<!--<link href="bootstrap-switch-master/docs/css/highlight.css" rel="stylesheet"> -->
+<link href="bootstrap-switch-master/dist/css/bootstrap3/bootstrap-switch.css" rel="stylesheet">
+<!-- <link href="bootstrap-switch-master/docs/css/main.css" rel="stylesheet"> -->
 
  <!-- Custom styles for this template -->
  <link href="light.css" rel="stylesheet">
@@ -60,37 +61,45 @@
          </ul>
        </div>
      </div>
-     <h3>Device 1</h3>
-     <span id="cb1" onclick="fctdevice1()">
+     <h3>Device 1 : 
+        <span id="cb1" onclick="fctdevice1()">
        <input type="checkbox" name="checkbox1" id="checkbox1"></span>
+     </h3>
 
-      <h3>Device 2</h3>
+      <h3>Device 2 : 
      <span id="cb2" onclick="fctdevice2()">
        <input type="checkbox" name="checkbox2" id="checkbox2"></span>
+       </h3>
 
-      <h3>Device 3</h3>
+      <h3>Device 3 : 
         <span id="cb3" onclick="fctdevice3()">
        <input type="checkbox" name="checkbox3" id="checkbox3"></span>
+     </h3>
 
-      <h3>Device 4</h3>
+      <h3>Device 4 : 
      <span id="cb4" onclick="fctdevice4()">
        <input type="checkbox" name="checkbox4" id="checkbox4"></span>
+      </h3>
 
-      <h3>Device 5</h3>
+      <h3>Device 5 : 
      <span id="cb5" onclick="fctdevice5()">
        <input type="checkbox" name="checkbox5" id="checkbox5"></span>
+      </h3>
 
-      <h3>Device 6</h3>
+      <h3>Device 6 : 
         <span id="cb6" onclick="fctdevice6()">
        <input type="checkbox" name="checkbox6" id="checkbox6"></span>
+      </h3>
 
-       <h3>Device 7</h3>
+       <h3>Device 7 : 
      <span id="cb7" onclick="fctdevice7()">
        <input type="checkbox" name="checkbox7" id="checkbox7"></span>
+      </h3>
 
-      <h3>Device 8</h3>
+      <h3>Device 8 : 
         <span id="cb8" onclick="fctdevice8()">
        <input type="checkbox" name="checkbox8" id="checkbox8"></span>
+      </h3>
 
 
     <div class="mastfoot">

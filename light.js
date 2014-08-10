@@ -113,9 +113,9 @@ var xhr = getXMLHttpRequest();
 xhr.open("POST", "ajax.php", true);
 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 if (elementcb8.checked) {
-    xhr.send("variable1=k");
+    xhr.send("variable1=o");
 }
 else {
-    xhr.send("variable1=l")
+    xhr.send("variable1=p")
 }
 }
