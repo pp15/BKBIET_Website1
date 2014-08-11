@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,39 +50,17 @@ session_start();
                 $annee .'</h3>';
                 ?>
                 <ul class="nav masthead-nav">
-                  <li class="active"><a href="index.php">Home</a></li>
+                  <li><a href="index.php">Home</a></li>
                   <li><a href="light.php">Lights</a></li>
-                  <li><a href="about.php">About</a></li>
+                  <li class="active"><a href="about.php">About</a></li>
                 </ul>
               </div>
             </div>
-<?php
-if (isset($_SESSION['prenom']) && isset($_SESSION['pwd'])) {
-?>
-            <div class="inner cover">
-              <h1 class="cover-heading">Welcome <?php 
-             echo $_SESSION['prenom']; ?> !</h1>
-              <p class="lead">You are now on the website <br>
-                where you can control the lights of the lab in BKBIET !</p>
-                  <a href="logout.php" class="btn btn-lg btn-danger" >Logout</a>
-              </div>
-<?php
-}
-else {
-?>
+
               <div class="inner cover">
               <h1 class="cover-heading">Welcome !</h1>
-              <p class="lead">You are now on the website <br>
-                where you can control the lights of the lab in BKBIET !</p>
-                <form action="login.php" method="post" class="form-signin">
-                  <input type="text" name="prenom" class="form-control" placeholder="Pseudo">
-                  <input type="password" name="pwd" class="form-control" placeholder="Password">
-                  <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-                </form>
-              </div>
-<?php
-}
-?>
+              <p class="lead">This website has been created during an internship in summer 2014 ! <br>
+                The author is Pierre-Paul Giannetti, a french student from the engineering school EISTI</p>
               <div class="mastfoot">
                 <div class="inner">
                   <p>Created by Pierre-Paul Giannetti</p>

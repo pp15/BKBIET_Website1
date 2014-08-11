@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,8 +50,8 @@
           <div class="inner">
            <h3 class="masthead-brand">
             Welcome <?php 
-            if (isset($_POST['prenom'])) {
-             echo $_POST['prenom']; 
+            if (isset($_SESSION['prenom'])) {
+             echo $_SESSION['prenom']; 
            }
            else {
            }
@@ -57,10 +60,13 @@
          <ul class="nav masthead-nav">
            <li><a href="index.php">Home</a></li>
            <li class="active"><a href="#">Lights</a></li>
-           <li><a href="#">Contact</a></li>
+           <li><a href="about.php">About</a></li>
          </ul>
        </div>
      </div>
+<?php
+if (isset($_SESSION['prenom']) && isset($_SESSION['pwd'])) {
+?>
      <h3>Device 1 : 
         <span id="cb1" onclick="fctdevice1()">
        <input type="checkbox" name="checkbox1" id="checkbox1"></span>
@@ -100,8 +106,14 @@
         <span id="cb8" onclick="fctdevice8()">
        <input type="checkbox" name="checkbox8" id="checkbox8"></span>
       </h3>
-
-
+<?php
+}
+else {
+?>
+<h3>Your login or password is wrong ! Please try again </h3>
+<?php
+}
+?>
     <div class="mastfoot">
      <div class="inner">
       <p>Created by Pierre-Paul Giannetti</p>
