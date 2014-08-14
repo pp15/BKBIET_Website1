@@ -19,7 +19,7 @@ else {
 function fctdevice1() {
 var elementcb1 = document.getElementById('checkbox1');
 var xhr = getXMLHttpRequest();
-xhr.open("POST", "ajax.php", true);
+xhr.open("POST", "ajax2.php", true);
 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 if (elementcb1.checked) {
     xhr.send("variable1=a");
@@ -32,7 +32,7 @@ else {
 function fctdevice2() {
 var elementcb2 = document.getElementById('checkbox2');
 var xhr = getXMLHttpRequest(); 
-xhr.open("POST", "ajax.php", true);
+xhr.open("POST", "ajax2.php", true);
 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 if (elementcb2.checked) {
     xhr.send("variable1=c");
@@ -45,7 +45,7 @@ else {
 function fctdevice3() {
 var elementcb3 = document.getElementById('checkbox3');
 var xhr = getXMLHttpRequest(); 
-xhr.open("POST", "ajax.php", true);
+xhr.open("POST", "ajax2.php", true);
 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 if (elementcb3.checked) {
     xhr.send("variable1=e");
@@ -58,7 +58,7 @@ else {
 function fctdevice4() {
 var elementcb4 = document.getElementById('checkbox4');
 var xhr = getXMLHttpRequest(); 
-xhr.open("POST", "ajax.php", true);
+xhr.open("POST", "ajax2.php", true);
 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 if (elementcb4.checked) {
     xhr.send("variable1=g");
@@ -71,7 +71,7 @@ else {
 function fctdevice5() {
 var elementcb5 = document.getElementById('checkbox5');
 var xhr = getXMLHttpRequest(); 
-xhr.open("POST", "ajax.php", true);
+xhr.open("POST", "ajax2.php", true);
 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 if (elementcb5.checked) {
     xhr.send("variable1=i");
@@ -84,7 +84,7 @@ else {
 function fctdevice6() {
 var elementcb6 = document.getElementById('checkbox6');
 var xhr = getXMLHttpRequest(); 
-xhr.open("POST", "ajax.php", true);
+xhr.open("POST", "ajax2.php", true);
 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 if (elementcb6.checked) {
     xhr.send("variable1=k");
@@ -97,7 +97,7 @@ else {
 function fctdevice7() {
 var elementcb7 = document.getElementById('checkbox7');
 var xhr = getXMLHttpRequest(); 
-xhr.open("POST", "ajax.php", true);
+xhr.open("POST", "ajax2.php", true);
 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 if (elementcb7.checked) {
     xhr.send("variable1=m");
@@ -110,7 +110,7 @@ else {
 function fctdevice8() {
 var elementcb8 = document.getElementById('checkbox8');
 var xhr = getXMLHttpRequest(); 
-xhr.open("POST", "ajax.php", true);
+xhr.open("POST", "ajax2.php", true);
 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 if (elementcb8.checked) {
     xhr.send("variable1=o");

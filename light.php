@@ -106,6 +106,7 @@ if (isset($_SESSION['prenom']) && isset($_SESSION['pwd'])) {
         <span id="cb8" onclick="fctdevice8()">
        <input type="checkbox" name="checkbox8" id="checkbox8"></span>
       </h3>
+
 <?php
 }
 else {
